@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({navElements}) => {
     return(
-        <section class='navbar'>
+        <div class='navbar'>
             {navElements.map((nav) => (
-                <Link key={nav.number} to={nav.link} class='row'>
-                    <button class='nav-button'>
+                <Link key={nav.number} to={nav.link} >
+                    <button>
                         {nav.text}
                     </button>
                 </Link>
             ))}
-        </section>
+        </div>
     )
 };
 

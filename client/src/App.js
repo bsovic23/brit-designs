@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Page Imports
 import Home from './pages/Home';
 import Request from './pages/Request';
+import Example from './pages/Example';
 import NoMatch from './pages/NoMatch';
 
 // Component Imports
@@ -17,9 +18,13 @@ function App() {
               path="/"
               element={<Home/>}
             />
-             <Route
+            <Route
               path="/request"
               element={<Request />}
+            />
+            <Route
+              path="/example"
+              element={<Example />}
             />
             <Route
               path="*"

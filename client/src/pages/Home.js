@@ -3,18 +3,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Imports
 import Navbar from '../components/Navbar';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Home = () => {
 
     const navChoices = [
         {number: 1, text: "Home", link: "/"},
-        {number: 2, text: "Request", link: "/request"}
+        {number: 2, text: "Request", link: "/request"},
+        {number: 3, text: "Example", link: "/example"}
     ];
 
     return(
         <section class='home'>
             <header>
-                HEADER
+                <Header />
             </header>
             <section class='home-body'>
                 <div class='container'>
@@ -33,7 +36,7 @@ const Home = () => {
                 </div>
             </section>
             <footer>
-                FOOTER
+                <Footer />
             </footer>
         </section>
     )
