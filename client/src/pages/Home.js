@@ -1,7 +1,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Imports
+import Navbar from '../components/Navbar';
+
 const Home = () => {
+
+    const navChoices = [
+        {number: 1, text: "Home", link: "/"},
+        {number: 2, text: "Request", link: "/request"}
+    ];
+
     return(
         <section class='home'>
             <header>
@@ -11,7 +20,7 @@ const Home = () => {
                 <div class='container'>
                     <div class='row'>
                         <div class='col-2'>
-                            NAV SMALL SECTION INSERT HERE
+                            < Navbar navElements={navChoices}/>
                         </div>
                         <div class='col-6'>
                             <img
